@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: black;
+    color:white;
+}
+
+body {
+    background: linear-gradient(153deg, gray,lightgray);
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    border: 30px solid blue;
+}
+
+h1 {
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 25px 20px 25px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: gray;
+    color: blue;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:540px) {
+    .two {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
